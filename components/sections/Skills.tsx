@@ -19,7 +19,7 @@ const skillCategories = [
   },
   {
     title: "AI & LLM Engineering",
-    skills: ["Prompt Engineering", "RAG", "Vector Databases", "Embedding Models", "LangChain", "LangGraph", "AI Agent Development"],
+    skills: ["Prompt Engineering", "RAG", "Vector Databases", "Embedding Models", "LangChain",],
   },
   {
     title: "Tools & Deployment",
