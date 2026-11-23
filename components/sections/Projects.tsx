@@ -41,13 +41,22 @@ const projects = [
   },
   {
     id: 3,
-    title: "Smart Home Controller",
+    title: "RepoPilot AI",
     description:
-      "IoT project built on a Raspberry Pi using Python and FastAPI to control home appliances. Includes a mobile-responsive React web interface for remote access.",
+      "An AI-powered codebase understanding platform that helps developers explore GitHub repositories, understand code functionality, and investigate issues through natural-language queries. It uses semantic code retrieval and a Retrieval-Augmented Generation (RAG) pipeline to generate evidence-backed answers with relevant code snippets and file references, ensuring reliable and context-aware responses.",
     image:
       "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800",
-    tags: ["Python", "FastAPI", "React", "IoT"],
-    github: "https://github.com",
+    tags: [
+      "Python",
+      "FastAPI",
+      "React",
+      "PostgreSQL",
+      "pgvector",
+      "RAG",
+      "Sentence Transformers",
+      "OpenRouter",
+    ],
+    github: "https://github.com/Adnankakar/RepoPilot-AI",
     demo: "https://example.com",
   },
 ];
