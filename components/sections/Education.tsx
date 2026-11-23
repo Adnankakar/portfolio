@@ -46,7 +46,7 @@ export function Education() {
                 <h5 className="font-semibold text-foreground mb-2">Relevant Coursework:</h5>
                 <div className="flex flex-wrap gap-2">
                   {["Data Structures & Algorithms", "Operating Systems", "Computer Networks", "Database Management", "Software Engineering", "Object Oriented Programming"].map(course => (
-                    <span key={course} className="px-3 py-1 bg-secondary rounded-[var(--radius)] text-sm text-secondary-foreground font-medium">
+                    <span key={course} className="text-xs font-medium px-3 py-1 bg-secondary/50 border border-border/50 text-secondary-foreground rounded-full">
                       {course}
                     </span>
                   ))}

@@ -36,14 +36,15 @@ export function Skills() {
           subtitle="A comprehensive list of technologies I work with."
         />
 
-        <div className="grid md:grid-cols-3 gap-8 mt-12">
+        <div className="flex flex-wrap gap-8 mt-12 justify-center">
           {skillCategories.map((category, idx) => (
             <motion.div
               key={category.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="card p-8 hover:shadow-accent/5 hover:-translate-y-1"
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="card p-8 w-full md:w-[calc(50%_-_1rem)] lg:w-[calc((100%_-_4rem)_/_3)] self-stretch hover:shadow-accent/5 hover:-translate-y-1"
             >
               <h3 className="text-2xl font-bold text-foreground mb-6 pb-4 border-b border-border">
                 {category.title}

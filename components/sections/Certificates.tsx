@@ -61,7 +61,7 @@ export function Certificates() {
                   {cert.skills.map(skill => (
                     <span
                       key={skill}
-                      className="px-3 py-1 bg-secondary rounded-[var(--radius)] text-sm text-secondary-foreground font-medium"
+                      className="text-xs font-medium px-3 py-1 bg-secondary/50 border border-border/50 text-secondary-foreground rounded-full"
                     >
                       {skill}
                     </span>

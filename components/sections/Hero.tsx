@@ -20,13 +20,9 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col gap-6"
         >
-          <div className="inline-block">
-            <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium border border-accent/20">
-              Available for Internships & Roles
-            </span>
-          </div>
-          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tighter text-foreground leading-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500">Adnan Kakar</span> | Computer Engineering Student
+          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tighter text-foreground leading-tight flex flex-col gap-2">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500">Adnan Kakar</span>
+            <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground/90">Computer Engineering Student</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
             A final-year Computer Engineering student from India, passionate about crafting clean, efficient, and scalable software solutions. Specializing as a Backend and AI Developer.
@@ -58,13 +54,14 @@ export function Hero() {
           className="relative hidden md:block"
         >
           {/* Passport Photo */}
-          <div className="w-full aspect-square relative rounded-full border border-border/50 p-6 shadow-xl shadow-accent/5">
-            <div className="w-full h-full rounded-full border border-border/80 shadow-2xl shadow-accent/10 relative overflow-hidden flex items-center justify-center">
+          <div className="w-full max-w-sm lg:max-w-md xl:max-w-lg mx-auto aspect-square relative rounded-full border border-border/50 p-3 shadow-xl shadow-accent/5">
+            <div className="w-full h-full rounded-full border border-border/80 shadow-2xl shadow-accent/10 relative overflow-hidden">
               <Image 
                 src="/images/passport-photo.jpeg"
                 alt="Adnan Kakar - Computer Engineering Student and AI Developer"
                 fill
-                className="object-cover"
+                sizes="(max-width: 1024px) 384px, (max-width: 1280px) 448px, 512px"
+                className="object-cover object-top scale-110"
                 priority
               />
             </div>

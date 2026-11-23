@@ -45,7 +45,7 @@ const projects = [
     description:
       "An AI-powered codebase understanding platform that helps developers explore GitHub repositories, understand code functionality, and investigate issues through natural-language queries. It uses semantic code retrieval and a Retrieval-Augmented Generation (RAG) pipeline to generate evidence-backed answers with relevant code snippets and file references, ensuring reliable and context-aware responses.",
     image:
-      "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     tags: [
       "Python",
       "FastAPI",
@@ -94,7 +94,7 @@ export function Projects() {
                 <h3 className="text-2xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground mb-6 flex-grow">
+                <p className="text-muted-foreground mb-6">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">

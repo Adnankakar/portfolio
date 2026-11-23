@@ -23,15 +23,26 @@ export function About() {
             className="space-y-6 text-lg text-muted-foreground leading-relaxed"
           >
             <p>
-              I am a final year Computer Engineering student. I really like building software and I want to know how technology works. What started as curiosity has grown into a passion for creating solutions that are useful and make a difference. I have learned a lot about software engineering and computer science fundamentals. I always look for ways to learn more get better and challenge myself.
+              I am a final-year Computer Engineering student passionate about
+              building software and exploring how technology works. My interests
+              include backend development, system design, and AI-powered
+              applications, particularly LLMs and RAG.
             </p>
             <p>
-              My main interests are in backend development, system design and AI-powered applications. I like working on projects where I design APIs build systems that can handle a lot of users and try out technologies, like Large Language Models and Retrieval-Augmented Generation. Each project teaches me something and helps me grow as a developer and a problem solver. I am proud of writing clean code and building software that serves a purpose.
+              My main interests are in backend development, system design and
+              AI-powered applications. I like working on projects where I design
+              APIs build systems that can handle a lot of users and try out
+              technologies, like Large Language Models and Retrieval-Augmented
+              Generation. Each project teaches me something and helps me grow as
+              a developer and a problem solver. I am proud of writing clean code
+              and building software that serves a purpose.
             </p>
             <p>
-              Outside of coding I try out technologies work with others on projects and keep up with what is happening in the tech industry. I think it is important to learn, work together and share ideas with others who like technology. My goal is to start my career as a software engineer and help build products that make a difference. For me Computer Engineering is not something I study. It is something I like to work with every day. I like Computer Engineering. I want to work with it every day.
+              I enjoy building practical solutions, learning new technologies,
+              and writing clean, efficient code. My goal is to grow as a
+              software engineer and contribute to building meaningful products
+              that make a difference.
             </p>
-          
           </motion.div>
 
           <motion.div
@@ -45,18 +56,21 @@ export function About() {
               {
                 icon: <Code2 className="text-accent" size={32} />,
                 title: "Backend Development",
-                description: "Building scalable APIs and robust server-side applications.",
+                description:
+                  "Building scalable APIs and robust server-side applications.",
               },
               {
                 icon: <Terminal className="text-accent" size={32} />,
                 title: "AI Engineering",
-                description: "Exploring RAG, LLMs, vector databases, and intelligent systems.",
+                description:
+                  "Exploring RAG, LLMs, vector databases, and intelligent systems.",
               },
               {
                 icon: <Cpu className="text-accent" size={32} />,
                 title: "Computer Engineering",
-                description: "Combining software fundamentals with problem-solving and system design.",
-              }
+                description:
+                  "Combining software fundamentals with problem-solving and system design.",
+              },
             ].map((item, index) => (
               <div
                 key={index}
@@ -66,7 +80,9 @@ export function About() {
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-foreground mb-2">
+                    {item.title}
+                  </h3>
                   <p className="text-muted-foreground">{item.description}</p>
                 </div>
               </div>
